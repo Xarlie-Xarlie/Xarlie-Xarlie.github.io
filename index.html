@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CharlieCharlie — Software Engineer</title>
+  <meta name="description" content="CharlieCharlie (Xarlie-Xarlie) — Software Engineer focused on Elixir, Phoenix, GraphQL and integrations. Currently at Isaac, previously Cross Commerce Store and UFMA (ML)." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+  <header class="nav" id="top">
+    <div class="container nav-inner">
+      <a href="#top" class="logo" aria-label="Home">CC<span>.dev</span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-small btn-ghost" href="https://github.com/Xarlie-Xarlie" target="_blank" rel="noopener">GitHub</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot"></span> Available for interesting backend work</p>
+          <h1>Hi, I'm <span class="accent">CharlieCharlie</span>.<br />Software Engineer.</h1>
+          <p class="lede">
+            I build APIs and backend systems with
+            <strong>Elixir&nbsp;&amp;&nbsp;Phoenix</strong>, GraphQL, and JavaScript/TypeScript.
+            Currently Software Engineer at <strong>Isaac</strong> (remote, São Paulo), previously
+            <strong>Cross Commerce Store</strong> and ML research at <strong>UFMA</strong>.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn" href="https://github.com/Xarlie-Xarlie" target="_blank" rel="noopener">GitHub ↗</a>
+            <a class="btn" href="https://www.linkedin.com/in/jean-charles-7813ba19b" target="_blank" rel="noopener">LinkedIn ↗</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong id="statRepos">13</strong><span>public repos</span></div>
+            <div><strong>5+</strong><span>yrs shipping Elixir</span></div>
+            <div><strong id="statFollowers">18</strong><span>followers</span></div>
+          </div>
+          <p class="mono-hint"><span class="prompt">$</span> <span id="typed"></span><span class="caret">▍</span></p>
+        </div>
+        <aside class="hero-card" aria-label="Profile card">
+          <div class="card-head">
+            <img src="https://avatars.githubusercontent.com/u/56764806?v=4" alt="CharlieCharlie avatar" width="72" height="72" />
+            <div>
+              <p class="card-name">Charlie Charlie</p>
+              <p class="card-handle">@Xarlie-Xarlie · Isaac</p>
+            </div>
+          </div>
+          <ul class="card-list">
+            <li><span>Elixir / Phoenix APIs</span><em>Isaac · daily driver</em></li>
+            <li><span>GraphQL + REST integrations</span><em>ERP · payments</em></li>
+            <li><span>RabbitMQ / messaging</span><em>background jobs</em></li>
+            <li><span>Docker · Linux · Postgres</span><em>ship &amp; persist</em></li>
+          </ul>
+          <div class="card-foot">
+            <span class="pill">Bacabal — MA</span>
+            <span class="pill">UTC−3</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container narrow">
+        <p class="section-eyebrow">About</p>
+        <h2>Backend-first, pragmatic, allergic to over-engineering.</h2>
+        <p>
+          I'm Jean Charles — online as <strong>CharlieCharlie / Xarlie-Xarlie</strong>.
+          I'm a Software Engineer at <strong>Isaac</strong>, where I architect and evolve scalable
+          backend and integration solutions: flexible <strong>GraphQL and REST APIs</strong> connecting
+          Isaac to ERPs and payment providers, plus real-time integrations and high-traffic frontends.
+          I care about reliability — refactoring legacy, expanding test coverage, and holding a high
+          bar in code review.
+        </p>
+        <p>
+          My public work leans Elixir (Phoenix APIs, Absinthe GraphQL, high-throughput experiments
+          like <code>rinhabackend</code>), with JavaScript/TypeScript on the side
+          (bots, tooling, small frontends). I also live in the terminal — Neovim, Lua configs, Docker.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <p class="section-eyebrow">Skills</p>
+        <h2>What I work with</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Core backend</h3>
+            <div class="tags">
+              <span>Elixir</span><span>Phoenix</span><span>Ecto</span><span>Absinthe GraphQL</span><span>REST APIs</span><span>PostgreSQL</span><span>RabbitMQ</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>JS / TS + Python</h3>
+            <div class="tags">
+              <span>TypeScript</span><span>Node.js</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Python</span><span>TensorFlow/Keras</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Ops &amp; workflow</h3>
+            <div class="tags">
+              <span>Docker</span><span>CI / GitHub Actions</span><span>Linux</span><span>Kibana</span><span>Monitoring</span><span>Git</span><span>Neovim + Lua</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-eyebrow">Projects</p>
+            <h2>Selected repos</h2>
+            <p class="muted">Curated from <a href="https://github.com/Xarlie-Xarlie?tab=repositories" target="_blank" rel="noopener">github.com/Xarlie-Xarlie</a>. Star counts update live via the GitHub API when online.</p>
+          </div>
+          <div class="filters" role="group" aria-label="Filter projects">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="Elixir">Elixir</button>
+            <button class="filter" data-filter="JavaScript">JS</button>
+            <button class="filter" data-filter="TypeScript">TS</button>
+            <button class="filter" data-filter="Lua">Lua</button>
+          </div>
+        </div>
+        <div class="projects-grid" id="projectsGrid"><!-- rendered by app.js --></div>
+        <p class="muted center">…plus configs (<a href="https://github.com/Xarlie-Xarlie/nvim" target="_blank" rel="noopener">nvim</a>, <a href="https://github.com/Xarlie-Xarlie/lunarvim" target="_blank" rel="noopener">lunarvim</a>) and experiments. Full list on GitHub.</p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section alt">
+      <div class="container narrow">
+        <p class="section-eyebrow">Experience</p>
+        <h2>Where I've been</h2>
+        <ol class="timeline">
+          <li>
+            <div class="tl-dot"></div>
+            <div>
+              <h3>Software Engineer — Isaac <span class="muted">· Oct 2024 — Present · Remote</span></h3>
+              <p class="muted">Architecting scalable backend and integration flows: flexible GraphQL/REST APIs linking Isaac to ERPs and payment providers, real-time integrations, resilient error handling and validation. Refactored legacy, grew automated test coverage, championed review standards.</p>
+            </div>
+          </li>
+          <li>
+            <div class="tl-dot"></div>
+            <div>
+              <h3>Software Engineer (Backend) — Cross Commerce Store <span class="muted">· Jan 2022 — Dec 2023 · Remote</span></h3>
+              <p class="muted">Marketplace integrations across Brazilian platforms, RabbitMQ background processing at high request rates, Linux VM/container infra, DB tuning, Kibana monitoring. Led code-quality initiatives — faster, cleaner, better documented.</p>
+            </div>
+          </li>
+          <li>
+            <div class="tl-dot"></div>
+            <div>
+              <h3>Machine Learning Engineer — UFMA / LACMOR <span class="muted">· Feb 2021 — Oct 2021 · Remote</span></h3>
+              <p class="muted">Deep neural nets for phoneme recognition in speech: FFT feature engineering, stacked autoencoders in TensorFlow/Keras (50% phoneme-grouping accuracy), custom training framework with mid-training layer insertion.</p>
+            </div>
+          </li>
+          <li>
+            <div class="tl-dot"></div>
+            <div>
+              <h3>Open source &amp; experiments — @Xarlie-Xarlie</h3>
+              <p class="muted">Phoenix APIs (<code>quebradobank</code>, <code>weather-api</code>), GraphQL with Absinthe, throughput challenges (<code>rinhabackend</code>), JS bots &amp; tooling.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container narrow center">
+        <p class="section-eyebrow">Contact</p>
+        <h2>Let's talk.</h2>
+        <p class="muted">No forms, no spam — just links. Fastest way to reach me is LinkedIn or a GitHub discussion/issue.</p>
+        <div class="hero-cta center">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/jean-charles-7813ba19b" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn" href="https://github.com/Xarlie-Xarlie" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> CharlieCharlie · Built with plain HTML/CSS/JS · Hosted on GitHub Pages</p>
+      <p><a href="#top">Back to top ↑</a></p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
