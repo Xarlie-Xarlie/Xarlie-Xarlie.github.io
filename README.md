@@ -32,7 +32,8 @@ Your site will be live at **https://Xarlie-Xarlie.github.io** (a few minutes aft
 
 ## Edit me
 
-- `index.html` — copy, sections, links
+- `index.html` — copy, sections, links (text uses `data-i18n` / `data-i18n-html` keys)
 - `styles.css` — theme (`:root` variables at the top)
-- `app.js` — project list (`FALLBACK`), typing phrases, filters
+- `app.js` — project list (`FALLBACK`), translation dictionary (`I18N`), typing phrases, filters
+- `photo.png` — profile photo shown in the hero card (72px circle, keep it square)
 - Project cards auto-enrich from `api.github.com/users/Xarlie-Xarlie/repos` when online.
