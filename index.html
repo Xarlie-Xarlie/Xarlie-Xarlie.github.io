@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CharlieCharlie — Software Engineer</title>
-  <meta name="description" content="CharlieCharlie (Xarlie-Xarlie) — Software Engineer focused on Elixir, Phoenix, GraphQL and integrations. Currently at Isaac, previously Cross Commerce Store and UFMA (ML)." />
+  <meta name="description" content="CharlieCharlie (Xarlie-Xarlie) — Software Engineer building Go backends (event-driven APIs for debts and payments) at Isaac, with Elixir/Phoenix on the side. Previously Cross Commerce Store and UFMA (ML)." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +17,7 @@
       <a href="#top" class="logo" aria-label="Home">CC<span>.dev</span></a>
       <nav class="nav-links" id="navLinks" aria-label="Primary">
         <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#work" data-i18n="nav_work">Work</a>
         <a href="#skills" data-i18n="nav_skills">Skills</a>
         <a href="#projects" data-i18n="nav_projects">Projects</a>
         <a href="#experience" data-i18n="nav_experience">Experience</a>
@@ -38,9 +39,9 @@
           <p class="eyebrow" data-i18n-html="hero_eyebrow"><span class="dot"></span> Available for interesting backend work</p>
           <h1 data-i18n-html="hero_h1">Hi, I'm <span class="accent">CharlieCharlie</span>.<br />Software Engineer.</h1>
           <p class="lede" data-i18n-html="hero_lede">
-            I build APIs and backend systems with
-            <strong>Elixir&nbsp;&amp;&nbsp;Phoenix</strong>, GraphQL, and JavaScript/TypeScript.
-            Currently Software Engineer at <strong>Isaac</strong> (remote, São Paulo), previously
+            I build backend systems in <strong>Go</strong> at <strong>Isaac</strong> (remote, São Paulo):
+            event-driven APIs for debts and payments. I also work with
+            <strong>Elixir&nbsp;&amp;&nbsp;Phoenix</strong> and GraphQL. Previously
             <strong>Cross Commerce Store</strong> and ML research at <strong>UFMA</strong>.
           </p>
           <div class="hero-cta">
@@ -64,9 +65,9 @@
             </div>
           </div>
           <ul class="card-list">
-            <li><span>Elixir / Phoenix APIs</span><em data-i18n="card_em1">Isaac · daily driver</em></li>
+            <li><span>Go · Fiber APIs</span><em data-i18n="card_em1">Isaac · daily driver</em></li>
             <li><span>GraphQL + REST integrations</span><em data-i18n="card_em2">ERP · payments</em></li>
-            <li><span>RabbitMQ / messaging</span><em data-i18n="card_em3">background jobs</em></li>
+            <li><span>Kafka · event-driven</span><em data-i18n="card_em3">consumers · workers</em></li>
             <li><span>Docker · Linux · Postgres</span><em data-i18n="card_em4">ship &amp; persist</em></li>
           </ul>
           <div class="card-foot">
@@ -98,6 +99,33 @@
       </div>
     </section>
 
+    <!-- WORK -->
+    <section id="work" class="section alt">
+      <div class="container">
+        <p class="section-eyebrow" data-i18n="nav_work">Work</p>
+        <h2 data-i18n="work_title">What I'm building now at Isaac</h2>
+        <p class="muted" data-i18n="work_sub">An event-driven platform for financial operations and payments. Most of my time goes to the Go backend.</p>
+
+        <div class="work-split">
+          <div class="work-goals">
+            <h3 data-i18n="goals_title">Where I'm pushing</h3>
+            <ul>
+              <li data-i18n="goal1">Financial writes that stay correct under concurrency and retries: unique-index collision handling, polling instead of fixed sleeps.</li>
+              <li data-i18n="goal2">Event consumers that keep the API consistent as payment state changes.</li>
+              <li data-i18n="goal3">Gradual rollouts: V2 handlers behind feature flags, shipped in small steps.</li>
+              <li data-i18n="goal4">More rigor on tests and contracts: integration suites and shared API collections.</li>
+            </ul>
+          </div>
+          <div class="claude-card">
+            <p class="section-eyebrow" data-i18n="claude_eyebrow">AI-assisted engineering</p>
+            <h3 data-i18n="claude_title">Built with Claude</h3>
+            <p class="muted" data-i18n="claude_p">I work with Claude Code every day for implementation, tests, reviews and debugging. My backend repos have a CLAUDE.md that teaches agents our build tags, mock generation, test-builder pattern and folder layout, so Claude follows team conventions instead of guessing.</p>
+            <div class="tags"><span>Claude Code</span><span>CLAUDE.md</span><span>Agent readiness 💎 Platinum · 🥇 Gold</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- SKILLS -->
     <section id="skills" class="section alt">
       <div class="container">
@@ -107,7 +135,7 @@
           <div class="skill-group">
             <h3 data-i18n="skills_g1">Core backend</h3>
             <div class="tags">
-              <span>Elixir</span><span>Phoenix</span><span>Ecto</span><span>Absinthe GraphQL</span><span>REST APIs</span><span>PostgreSQL</span><span>RabbitMQ</span>
+              <span>Go</span><span>Fiber</span><span>Kafka</span><span>PostgreSQL</span><span>Redis</span><span>BigQuery</span><span>Elixir</span><span>Phoenix</span><span>Absinthe GraphQL</span>
             </div>
           </div>
           <div class="skill-group">
@@ -119,7 +147,7 @@
           <div class="skill-group">
             <h3 data-i18n="skills_g3">Ops &amp; workflow</h3>
             <div class="tags">
-              <span>Docker</span><span>CI / GitHub Actions</span><span>Linux</span><span>Kibana</span><span>Monitoring</span><span>Git</span><span>Neovim + Lua</span>
+              <span>Claude Code</span><span>Docker</span><span>CI / GitHub Actions</span><span>Linux</span><span>Datadog</span><span>Git</span><span>Neovim + Lua</span>
             </div>
           </div>
         </div>
@@ -157,7 +185,7 @@
           <li>
             <div class="tl-dot"></div>
             <div>
-              <h3 data-i18n-html="exp1t">Software Engineer — Isaac <span class="muted">· Oct 2024 — Present · Remote</span></h3>
+              <h3 data-i18n-html="exp1t">Software Engineer — Isaac <span class="muted">· Oct 2024 — Oct 2026 · Remote</span></h3>
               <p class="muted" data-i18n="exp1d">Architecting scalable backend and integration flows: flexible GraphQL/REST APIs linking Isaac to ERPs and payment providers, real-time integrations, resilient error handling and validation. Refactored legacy, grew automated test coverage, championed review standards.</p>
             </div>
           </li>
